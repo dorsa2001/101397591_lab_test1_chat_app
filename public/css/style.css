@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Chat App Styling */
+.chat-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+  background: #1e6fdb;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Chat Messages */
+/* Chat Messages */
+#chatBox {
+  height: 300px;
+  overflow-y: auto;
+  padding: 15px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Message Styling */
+.message {
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 15px;
+  max-width: 70%;
+  font-size: 16px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* User Message (Right) */
+.message.user {
+  background: #007bff;
+  color: white;
+  align-self: flex-end;
+  text-align: right;
+}
+
+/* Other User Message (Left) */
+.message.other {
+  background: #e6e6e6;
+  color: black;
+  align-self: flex-start;
+  text-align: left;
+}
+
+/* Fix Chat Input Box & Button */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input#message {
+  flex: 1;
+  border-radius: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+button#send-btn {
+  background-color: #28a745;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+button#send-btn:hover {
+  background-color: #218838;
+}
+
+/* Room Selection */
+.room-selection {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.room-selection select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Leave Room Button */
+#leaveRoom {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#leaveRoom:hover {
+  background: #c82333;
+}
